@@ -1,1 +1,52 @@
-// TODO
+.postWrapper {
+  &:hover {
+    .title {
+      color: var(--pink-500);
+    }
+  }
+
+  .title {
+    color: var(--gray-100);
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.36rem;
+
+    margin-top: 50px;
+  }
+
+  .subtitle {
+    color: var(--gray-200);
+    font-size: 1.125rem;
+    line-height: 1.313rem;
+    text-align: justify;
+
+    padding: 10px 0 25px;
+  }
+
+  .detailsWrapper {
+    display: flex;
+    align-items: center;
+
+    span, time {
+      font-size: 0.875rem;
+      margin: 0 25px 0 10px;
+    }
+  }
+}
+
+.loadMoreButton {
+  color: var(--pink-500);
+  background: none;
+  border: none;
+
+  font-size: 1.125rem;
+  font-weight: 600;
+
+  padding-top: 60px;
+
+  transition: filter .2s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
